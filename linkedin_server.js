@@ -1,4 +1,5 @@
-Accounts.oauth.registerService('linkedin');
+// v0.6.5
+// Accounts.oauth.registerService('linkedin');
 
 Accounts.addAutopublishFields({
   // publish all fields including access token, which can legitimately
