@@ -5,6 +5,7 @@ Package.describe({
 Package.on_use(function(api) {
   api.use('accounts-base', ['client', 'server']);
   api.use('accounts-oauth', ['client', 'server']);
+  api.use('linkedin', ['client', 'server']);
 
   api.add_files(['linkedin_login_button.css'], 'client');
 
