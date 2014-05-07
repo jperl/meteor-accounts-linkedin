@@ -3,9 +3,9 @@
   "description": "Login service for LinkedIn",
   "homepage": "https://github.com/yefim/meteor-accounts-linkedin",
   "author": "Geoffrey Vedernikoff (http://twitter.com/yefim)",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "git": "https://github.com/yefim/meteor-accounts-linkedin.git",
   "packages": {
-    "linkedin": "0.0.3"
+    "linkedin": "0.0.2"
   }
 }
