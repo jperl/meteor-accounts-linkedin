@@ -6,6 +6,6 @@
   "version": "0.0.5",
   "git": "https://github.com/yefim/meteor-accounts-linkedin.git",
   "packages": {
-    "linkedin": "0.0.2"
+    "linkedin": "0.0.3"
   }
 }
