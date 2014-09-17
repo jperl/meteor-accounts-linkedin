@@ -1,20 +1,19 @@
 Package.describe({
-  summary: "Accounts service for LinkedIn accounts"
+    name: 'jonperl:accounts-linkedin',
+    summary: 'Login service for LinkedIn accounts',
+    version: '1.0.0',
+    git: 'https://github.com/jperl/meteor-accounts-linkedin'
 });
 
-Package.on_use(function(api) {
-  api.use('accounts-base', ['client', 'server']);
-  api.use('accounts-oauth', ['client', 'server']);
-  api.use('linkedin', ['client', 'server']);
+Package.on_use(function (api) {
+    api.versionsFrom('METEOR@0.9.2');
 
-  // v0.6.5
-  // Export Accounts (etc) to packages using this one.
-  api.imply('accounts-base', ['client', 'server']);
-  api.use('linkedin', ['client', 'server']);
+    api.use('accounts-base', ['client', 'server']);
+    // Export Accounts (etc) to packages using this one.
+    api.imply('accounts-base', ['client', 'server']);
+    api.use('accounts-oauth', ['client', 'server']);
+    api.use('jonperl:linkedin@1.0.0', ['client', 'server']);
 
-  api.add_files(['linkedin_login_button.css'], 'client');
-
-  api.add_files('linkedin_common.js', ['client', 'server']);
-  api.add_files('linkedin_server.js', 'server');
-  api.add_files('linkedin_client.js', 'client');
+    api.add_files('linkedin.js');
+    api.add_files(['linkedin_login_button.css'], 'client');
 });
