@@ -3,11 +3,11 @@ meteor-accounts-linkedin
 
 A meteor package for LinkedIn's login service.
 
-*Install Package*
+**Install Package**
 
 `meteor add jonperl:accounts-linkedin`
 
-*Retrieve Additional Data*
+**Retrieve Additional Data**
 
 This is how to get all the profile fields. Make sure to remove what you do not need to stay in line w/ their [API terms](https://developer.linkedin.com/documents/linkedin-apis-terms-use).
 
